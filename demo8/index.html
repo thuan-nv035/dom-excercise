@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="image" src="./img/1.jpg" width = "410px" height = "350px" alt="">
+    </div>
+    <div>
+        <img onmouseover = "change1()" src="./img/1.jpg" width="100px" height = "100px" alt="">
+        <img onmouseover = "change2()" src="./img/2.jpg" width="100px" height = "100px" alt="">
+        <img onmouseover = "change3()" src="./img/3.jpg" width="100px" height = "100px" alt="">
+        <img onmouseover = "change4()" src="./img/4.jpg" width="100px" height = "100px" alt="">
+    </div>
+
+    <script>
+        function change1() {
+            document.querySelector("#image").src = "./img/1.jpg"
+        }
+        function change2() {
+            document.querySelector("#image").src = "./img/2.jpg"
+        }
+        function change3() {
+            document.querySelector("#image").src = "./img/3.jpg"
+        }
+        function change4() {
+            document.querySelector("#image").src = "./img/4.jpg"
+        }
+
+    </script>
+</body>
+</html>
